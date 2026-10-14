@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/Css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Validacao</title>
+</head>
+
+<body>
+    <main>
+        <form action="" id="form">
+            <div class="container">
+                <div id="azul" class="azul">
+                    <div class="pergunta1">
+                        <h3>Ainda não possui uma conta?</h3>
+                        <button type="button" class="btnazul"><i
+                                class="fa-solid fa-right-to-bracket"></i>Resgistrar</button>
+                    </div>
+                    <div class="pergunta2">
+                        <h3>Já possui uma conta?</h3>
+                        <button type="button" class="btnazul"><i
+                                class="fa-solid fa-right-to-bracket"></i>Entrar</button>
+                    </div>
+                </div>
+                <div id="branco" class="branco">
+                    <div class="entrar">
+                        <h2>Entrar <i class="fa-solid fa-user-plus"></i></h2>
+                        <label for="email">E-mail:</label>
+                        <div class="iconeEcampo">
+                            <input type="email" name="" id="email" required pattern="[^@]+@[^@][a-z]+/.[a-z]{2,}">
+                            <i class="fa-regular fa-envelope"></i><br>
+                            <span class="erro-email"></span>
+                        </div>
+                        <label for="senha">Senha:</label>
+                        <div class="iconeEcampo">
+                            <input type="password" name="" id="senha" required pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])"
+                                min="8">
+                            <i class="fa-solid fa-eye-slash"></i><br>
+                            <span class="erro-senha"></span>
+                        </div>
+                        <div class="esqueceuSenha">
+                            <button type="submit">
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                                Entrar
+                            </button>
+                            <p><a href="">Esquecí-me</a></p>
+                        </div>
+                        <p>Entrar com:</p>
+                        <div class="icones">
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-google"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="registrar">
+                        <h2>Registar <i class="fa-solid fa-user-plus"></i></h2>
+                        <div class="campos">
+                            <div class="nomeApelido">
+                                <div>
+                                    <label for="nome">Nome:</label>
+                                    <div class="iconeEcampo">
+                                        <input type="text" name="" id="nome" required minlength="3" maxlength="30"
+                                            pattern="[A-Za-z ]+">
+                                        <i class="fa-solid fa-user"></i><br>
+                                        <span class="erro-nome"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="apelido">Apelido:</label>
+                                    <div class="iconeEcampo">
+                                        <input type="text" name="" id="apelido" required minlength="3" maxlength="30"
+                                            pattern="[A-Za-z ]+">
+                                        <i class="fa-regular fa-user"></i><br>
+                                        <span class="erro-apelido"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="numeroEmail">
+                                <div>
+                                    <label for="contacto">Contacto:</label>
+                                    <div class="iconeEcampo">
+                                        <input type="number" name="" id="contacto" required pattern="8[2-7][0-9]{7}">
+                                        <i class="fa-solid fa-phone"></i><br>
+                                        <span class="erro-contacto"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email">E-mail:</label>
+                                    <div class="iconeEcampo">
+                                        <input type="email" name="" id="email" pattern="[^@]+@[^@][a-z]+/.[a-z]{2,}"
+                                            required>
+                                        <i class="fa-regular fa-envelope"></i><br>
+                                        <span class="erro-email"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="passwords">
+                                <div>
+                                    <label for="senha">Senha:</label>
+                                    <div class="iconeEcampo">
+                                        <input type="password" name="" id="senha" min="8" required
+                                            pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])">
+                                        <i class="fa-solid fa-eye-slash"></i><br>
+                                        <span class="erro-senha"></span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="confirm">Confirmar senha:</label>
+                                    <div class="iconeEcampo">
+                                        <input type="password" name="" id="confirm" min="8" required
+                                            pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])">
+                                        <i class="fa-solid fa-eye-slash"></i><br>
+                                        <span class="erro-confirm"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            Registrar
+                        </button>
+                        <p>Registrar com:</p>
+                        <div>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-google"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
