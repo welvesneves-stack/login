@@ -16,19 +16,19 @@
         <form action="" id="form">
             <div class="container">
                 <div id="azul" class="azul">
-                    <div class="pergunta1">
+                    <div class="pergunta1" id="pergunta1">
                         <h3>Ainda não possui uma conta?</h3>
-                        <button type="button" class="btnazul"><i
+                        <button type="button" class="btnazul" id="btnazul1"><i
                                 class="fa-solid fa-right-to-bracket"></i>Resgistrar</button>
                     </div>
-                    <div class="pergunta2">
+                    <div class="pergunta2"  id="pergunta2">
                         <h3>Já possui uma conta?</h3>
-                        <button type="button" class="btnazul"><i
+                        <button type="button" class="btnazul" id="btnazul2"><i
                                 class="fa-solid fa-right-to-bracket"></i>Entrar</button>
                     </div>
                 </div>
                 <div id="branco" class="branco">
-                    <div class="entrar">
+                    <div class="entrar" id="entrarlado">
                         <h2>Entrar <i class="fa-solid fa-user-plus"></i></h2>
                         <label for="email">E-mail:</label>
                         <div class="iconeEcampo">
@@ -58,7 +58,7 @@
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
-                    <div class="registrar">
+                    <div class="registrar" id="registrarlado">
                         <h2>Registar <i class="fa-solid fa-user-plus"></i></h2>
                         <div class="campos">
                             <div class="nomeApelido">
@@ -91,9 +91,9 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <label for="email">E-mail:</label>
+                                    <label for="email1">E-mail:</label>
                                     <div class="iconeEcampo">
-                                        <input type="email" name="" id="email" pattern="[^@]+@[^@][a-z]+/.[a-z]{2,}"
+                                        <input type="email" name="" id="email1" pattern="[^@]+@[^@][a-z]+/.[a-z]{2,}"
                                             required>
                                         <i class="fa-regular fa-envelope"></i><br>
                                         <span class="erro-email"></span>
@@ -126,7 +126,7 @@
                             Registrar
                         </button>
                         <p>Registrar com:</p>
-                        <div>
+                        <div class="icones">
                             <a href=""><i class="fa-brands fa-github"></i></a>
                             <a href=""><i class="fa-brands fa-google"></i></a>
                             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -138,6 +138,7 @@
             </div>
         </form>
     </main>
+    <script src="/login/javascript/login.js"></script>
 </body>
 
 </html>
