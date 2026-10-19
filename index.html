@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
                         <button type="button" class="btnazul" id="btnazul1"><i
                                 class="fa-solid fa-right-to-bracket"></i>Resgistrar</button>
                     </div>
-                    <div class="pergunta2"  id="pergunta2">
+                    <div class="pergunta2" id="pergunta2">
                         <h3>Já possui uma conta?</h3>
                         <button type="button" class="btnazul" id="btnazul2"><i
                                 class="fa-solid fa-right-to-bracket"></i>Entrar</button>
@@ -29,26 +29,27 @@
                 </div>
                 <div id="branco" class="branco">
                     <div class="entrar" id="entrarlado">
-                        <h2>Entrar <i class="fa-solid fa-user-plus"></i></h2>
+                        <h2>Entrar <i class="fa-solid fa-right-to-bracket"></i></h2>
                         <label for="email">E-mail:</label>
                         <div class="iconeEcampo">
-                            <input type="email" name="" id="email" required pattern="[^@]+@[^@][a-z]+/.[a-z]{2,}">
-                            <i class="fa-regular fa-envelope"></i><br>
-                            <span class="erro-email"></span>
+                            <input type="email" name="" id="email" required pattern="[^@]+@[^@]+\.[a-z]{2,}"
+                                placeholder="nome@gmail.com" title="Colocque o seu e-mail" autocomplete="email">
+                            <i class="fa-regular fa-envelope"></i>
                         </div>
-                        <label for="senha">Senha:</label>
+                        <span class="erro-email"></span>
+                        <br><label for="senha">Senha:</label>
                         <div class="iconeEcampo">
-                            <input type="password" name="" id="senha" required pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])"
-                                min="8">
-                            <i class="fa-solid fa-eye-slash"></i><br>
-                            <span class="erro-senha"></span>
+                            <input type="password" name="" id="senha" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                minlength="8" placeholder="********" title="Digite a senha" autocomplete="current-password">
+                            <i class="fa-solid fa-eye-slash olho"></i>
                         </div>
+                        <span class="erro-senha"></span>
                         <div class="esqueceuSenha">
-                            <button type="submit">
+                            <button type="submit" id="btnentrar">
                                 <i class="fa-solid fa-right-to-bracket"></i>
                                 Entrar
                             </button>
-                            <p><a href="">Esquecí-me</a></p>
+                            <p><a href="">Esqueci-me</a></p>
                         </div>
                         <p>Entrar com:</p>
                         <div class="icones">
@@ -66,62 +67,68 @@
                                     <label for="nome">Nome:</label>
                                     <div class="iconeEcampo">
                                         <input type="text" name="" id="nome" required minlength="3" maxlength="30"
-                                            pattern="[A-Za-z ]+">
-                                        <i class="fa-solid fa-user"></i><br>
-                                        <span class="erro-nome"></span>
+                                            pattern="[A-Za-z ]+" title="coloque seu primeiro nome"
+                                            placeholder="Ex:.       welves">
+                                        <i class="fa-solid fa-user"></i>
                                     </div>
+                                    <span class="erro-nome"></span>
                                 </div>
                                 <div>
                                     <label for="apelido">Apelido:</label>
                                     <div class="iconeEcampo">
                                         <input type="text" name="" id="apelido" required minlength="3" maxlength="30"
-                                            pattern="[A-Za-z ]+">
-                                        <i class="fa-regular fa-user"></i><br>
-                                        <span class="erro-apelido"></span>
+                                            pattern="[A-Za-z ]+" title="coloque seu ultimo nome"
+                                            placeholder="Ex:.         Neves">
+                                        <i class="fa-regular fa-user"></i>
                                     </div>
+                                    <span class="erro-apelido"></span>
                                 </div>
                             </div>
                             <div class="numeroEmail">
                                 <div>
                                     <label for="contacto">Contacto:</label>
                                     <div class="iconeEcampo">
-                                        <input type="number" name="" id="contacto" required pattern="8[2-7][0-9]{7}">
-                                        <i class="fa-solid fa-phone"></i><br>
-                                        <span class="erro-contacto"></span>
+                                        <input type="tel" name="" id="contacto" required pattern="8[2-7][0-9]{7}" maxlength="9"
+                                            placeholder="Ex:.  847370290" title="digite o seu contacto">
+                                        <i class="fa-solid fa-phone"></i>
                                     </div>
+                                    <span class="erro-contacto"></span>
                                 </div>
                                 <div>
-                                    <label for="email1">E-mail:</label>
+                                    <label for="Email">E-mail:</label>
                                     <div class="iconeEcampo">
-                                        <input type="email" name="" id="email1" pattern="[^@]+@[^@][a-z]+/.[a-z]{2,}"
-                                            required>
-                                        <i class="fa-regular fa-envelope"></i><br>
-                                        <span class="erro-email"></span>
+                                        <input type="email" name="Email" id="Email"
+                                            pattern="[^@]+@[^@]+\.[a-z]{2,}" required placeholder="nome@gmail.com"
+                                            title="Colocque o seu e-mail" autocomplete="email">
+                                        <i class="fa-regular fa-envelope"></i>
                                     </div>
+                                    <span class="erro-email1"></span>
                                 </div>
                             </div>
                             <div class="passwords">
                                 <div>
-                                    <label for="senha">Senha:</label>
+                                    <label for="senha1">Senha:</label>
                                     <div class="iconeEcampo">
-                                        <input type="password" name="" id="senha" min="8" required
-                                            pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])">
-                                        <i class="fa-solid fa-eye-slash"></i><br>
-                                        <span class="erro-senha"></span>
+                                        <input type="password" name="" id="senha1" minlength="8" required
+                                            pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{8,}" placeholder="********"
+                                            title="Digite a senha" autocomplete="new-password">
+                                        <i class="fa-solid fa-eye-slash olho"></i>
                                     </div>
+                                    <span class="erro-senha1"></span>
                                 </div>
                                 <div>
                                     <label for="confirm">Confirmar senha:</label>
                                     <div class="iconeEcampo">
-                                        <input type="password" name="" id="confirm" min="8" required
-                                            pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z])">
-                                        <i class="fa-solid fa-eye-slash"></i><br>
-                                        <span class="erro-confirm"></span>
+                                        <input type="password" name="" id="confirm"  required
+                                             placeholder="********"
+                                            title="Confirme a senha">
+                                        <i class="fa-solid fa-eye-slash olho"></i>
                                     </div>
+                                    <span class="erro-confirm"></span>
                                 </div>
                             </div>
                         </div>
-                        <button type="submit">
+                        <button type="submit" id="btnregistrar">
                             <i class="fa-solid fa-right-to-bracket"></i>
                             Registrar
                         </button>

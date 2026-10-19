@@ -21,15 +21,16 @@ main {
   height: auto;
   width: 360px;
   gap: 10px;
+  box-shadow: 0px 0px 3px;
+  border-bottom-right-radius: 50px;
 }
 .azul {
   position: relative;
   background-color: blue;
-  height: 200px;
+  height: 130px;
   padding: 50px;
   overflow: hidden;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 80px;
 }
 .pergunta1 {
   color: white;
@@ -69,18 +70,18 @@ main {
 }
 .entrar input {
   border: none;
-  background-color: rgba(169, 169, 169, 0.603);
+  background-color: rgba(169, 169, 169, 0.288);
   height: 37px;
   border-radius: 4px;
   color: black;
   width: 330px;
   text-align: center;
-  margin-bottom: 10px;
   font-size: 17px;
+  box-shadow: 0px 0px 2px;
 }
 .registrar input {
   border: none;
-  background-color: rgba(169, 169, 169, 0.603);
+  background-color: rgba(169, 169, 169, 0.288);
   height: 30px;
   border-radius: 4px;
   color: black;
@@ -88,6 +89,7 @@ main {
   text-align: center;
   font-size: 17px;
   margin-top: 2px;
+  box-shadow: 0px 0px 2px;
 }
 label {
   font-weight: bolder;
@@ -125,6 +127,7 @@ label {
   padding: 8px;
   border-radius: 6px;
   cursor: pointer;
+  width: 110px;
 }
 .registrar button {
   border: none;
@@ -159,7 +162,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 input:focus {
-  outline: 2px solid blue;
+  outline: 1px solid dimgrey;
   background-color: white;
 }
 .pergunta1 {
@@ -168,7 +171,7 @@ input:focus {
   top: 30%;
   font-size: 16px;
   text-align: center;
-  transition: .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .pergunta2 {
   top: 100%;
@@ -177,34 +180,64 @@ input:focus {
   font-size: 16px;
   text-align: center;
   margin-left: 30px;
-  transition: .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .entrar {
-    padding: 10px;
-    width: 100%;
-    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 10px;
+  width: 100%;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .registrar {
-    position: absolute;
-    left: 100%;
-    padding: 20px;
-    transition: .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: absolute;
+  left: 100%;
+  padding: 20px;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.ctrlpergunta1{
-    top: 100%;
-    transition: .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.ctrlpergunta1 {
+  top: 100%;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.ctrlpergunta2{
-    top: 30%;
-    transition: .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.ctrlpergunta2 {
+  top: 30%;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.ctrlentrar{
-    position: absolute;
-    left: 100%;
-    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.ctrlentrar {
+  position: absolute;
+  left: 100%;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.ctrlregistar{
-    position: relative;
-    left: 0%;
-    transition: .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.ctrlregistar {
+  position: relative;
+  left: 0%;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+input::placeholder {
+  font-size: 12px;
+}
+.branco span {
+  margin-top: -5px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+input.invalido {
+  border: 2px solid red;
+  background-color: white;
+}
+input.valido {
+  border: 1.5px solid green;
+  background-color: white;
+}
+.erro-nome,
+.erro-apelido,
+.erro-email,
+.erro-email1,
+.erro-senha,
+.erro-senha1,
+.erro-confirm,
+.erro-contacto {
+  color: red;
+}
+.olho {
+  cursor: pointer;
 }
